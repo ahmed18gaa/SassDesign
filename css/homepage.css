@@ -13,6 +13,10 @@
   position: relative;
 }
 
+.clearFix {
+  clear: both;
+}
+
 .head-with-border {
   position: relative;
 }
@@ -41,6 +45,7 @@ body {
   background-color: #f6f6f6;
   font-family: Tahoma;
   font-size: 16px;
+  min-height: 5000px; /* For Testing */
 }
 
 ul,
@@ -146,5 +151,33 @@ ol {
 }
 
 /* End Services */
+/* Start Our Players */
+.our-players .player-box {
+  float: left;
+  width: 20%;
+}
+.our-players .player-box:not(:last-of-type) {
+  padding-right: 20px;
+}
+.our-players .player-box .player-img {
+  max-width: 100%;
+}
+.our-players .player-box .player-title {
+  color: #666;
+  font-weight: normal;
+}
+.our-players .player-box .player-title span {
+  font-weight: bold;
+}
+.our-players .player-box .player-desc {
+  color: #777;
+  line-height: 1.6;
+}
+.our-players .player-box .link {
+  color: #e2494c;
+  text-decoration: none;
+}
+
+/* End Our Players */
 
 /*# sourceMappingURL=homepage.css.map */
