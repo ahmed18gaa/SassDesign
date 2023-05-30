@@ -98,3 +98,19 @@
   }
 }
 /* End Our Players */
+
+/* Start Lorem Ipsum */
+.lorem-ipsum {
+  .lorem-box {
+    float: variables.$float-left;
+    width: (94% / 3);
+    text-align: center;
+    &:not(:last-of-type) {
+      margin-right: 3%;
+    }
+    .lorem-img {
+      max-width: 100%;
+    }
+  }
+}
+/* End Lorem Ipsum */

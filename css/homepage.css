@@ -179,5 +179,19 @@ ol {
 }
 
 /* End Our Players */
+/* Start Lorem Ipsum */
+.lorem-ipsum .lorem-box {
+  float: left;
+  width: 31.3333333333%;
+  text-align: center;
+}
+.lorem-ipsum .lorem-box:not(:last-of-type) {
+  margin-right: 3%;
+}
+.lorem-ipsum .lorem-box .lorem-img {
+  max-width: 100%;
+}
+
+/* End Lorem Ipsum */
 
 /*# sourceMappingURL=homepage.css.map */
