@@ -1,0 +1,10 @@
+@use "../helpers/mixins";
+* {
+  @include mixins.prefixer(box-sizing, border-box, webkit moz o);
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

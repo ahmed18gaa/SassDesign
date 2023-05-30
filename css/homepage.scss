@@ -1,0 +1,9 @@
+// @use "./scss/helpers/variables" as *;
+// @use "./scss/helpers/mixins" as *;
+@use "./scss/layout/grid";
+
+@use "./scss/pages/globalpage" as *;
+@use "./scss/layout/header" as *;
+@use "./scss/pages/homepage" as *;
+@use "./scss/components/buttons" as *;
+@use "./scss/layout/footer" as *;

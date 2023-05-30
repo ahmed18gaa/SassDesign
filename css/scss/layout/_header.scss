@@ -1,0 +1,38 @@
+@use "../helpers/variables";
+
+/* Start Header */
+.header {
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px solid variables.$grayColor;
+  .logo {
+    width: 30%;
+    float: variables.$float-left;
+    h1 {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    p {
+    }
+  }
+  .navbar {
+    width: 70%;
+    float: variables.$float-left;
+    background-color: variables.$redColor;
+    border-radius: 15px;
+    li {
+      width: 20%;
+      float: variables.$float-left;
+      a {
+        display: block;
+        padding: 20px 10px;
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+}
+/* End Header */
