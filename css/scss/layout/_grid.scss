@@ -1,13 +1,22 @@
 @use "../helpers/mixins";
+@use "../helpers/variables";
 * {
   @include mixins.prefixer(box-sizing, border-box, webkit moz o);
 }
 .container {
-  width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
+  @media #{variables.$minSmall} {
+    width: 750px;
+  }
+  @media #{variables.$minMedium} {
+    width: 970px;
+  }
+  @media #{variables.$minLarge} {
+    width: 1170px;
+  }
 }
 
 .clearFix {
