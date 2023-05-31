@@ -6,23 +6,50 @@
   overflow: hidden;
   border-bottom: 1px solid variables.$grayColor;
   .logo {
-    width: 30%;
-    float: variables.$float-left;
+    position: relative;
+    @media #{variables.$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+    @media #{variables.$minMedium} {
+      width: 30%;
+      float: variables.$float-left;
+      text-align: variables.$text-left;
+    }
     h1 {
       margin-bottom: 0;
       margin-top: 10px;
     }
-    p {
-    }
   }
   .navbar {
-    width: 70%;
-    float: variables.$float-left;
+    overflow: hidden;
     background-color: variables.$redColor;
     border-radius: 15px;
+    @media #{variables.$minSmall} {
+      width: 100%;
+      float: none;
+      margin-top: 30px;
+      display: block !important;
+    }
+    @media #{variables.$minMedium} {
+      width: 70%;
+      float: variables.$float-left;
+      margin-top: 1em;
+    }
+    @media #{variables.$maxMobile} {
+      display: none;
+      border-radius: 0;
+    }
     li {
       width: 20%;
       float: variables.$float-left;
+      font-size: 18px;
+      text-align: center;
+      @media #{variables.$maxMobile} {
+        float: none;
+        display: block;
+      }
       a {
         display: block;
         padding: 20px 10px;

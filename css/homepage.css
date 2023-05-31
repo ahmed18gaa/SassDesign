@@ -74,22 +74,63 @@ ol {
   border-bottom: 1px solid #d9d9d9;
 }
 .header .logo {
-  width: 30%;
-  float: left;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .header .logo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .header .logo {
+    width: 30%;
+    float: left;
+    text-align: left;
+  }
 }
 .header .logo h1 {
   margin-bottom: 0;
   margin-top: 10px;
 }
 .header .navbar {
-  width: 70%;
-  float: left;
+  overflow: hidden;
   background-color: #e2494c;
   border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .header .navbar {
+    width: 100%;
+    float: none;
+    margin-top: 30px;
+    display: block !important;
+  }
+}
+@media (min-width: 992px) {
+  .header .navbar {
+    width: 70%;
+    float: left;
+    margin-top: 1em;
+  }
+}
+@media (max-width: 767px) {
+  .header .navbar {
+    display: none;
+    border-radius: 0;
+  }
 }
 .header .navbar li {
   width: 20%;
   float: left;
+  font-size: 18px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .header .navbar li {
+    float: none;
+    display: block;
+  }
 }
 .header .navbar li a {
   display: block;
@@ -132,8 +173,7 @@ ol {
   border: 3px solid #d9d9d9;
   cursor: pointer;
 }
-.slider .bullets li.active,
-.slider .bullets li:hover {
+.slider .bullets li.active, .slider .bullets li:hover {
   background-color: #fff;
   border: 3px solid #333;
 }
@@ -223,6 +263,31 @@ ol {
   background-color: #e2494c;
 }
 
+.toggle-button {
+  background-color: #e2494c;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  display: none;
+}
+@media (max-width: 767px) {
+  .toggle-button {
+    display: block;
+  }
+}
+.toggle-button span {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+}
+.toggle-button span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
 .footer {
   background-color: #e2e2e2;
   overflow: hidden;
@@ -284,8 +349,8 @@ ol {
 .footer .contact {
   width: 25%;
 }
-.footer .contact input[type="text"],
-.footer .contact input[type="email"],
+.footer .contact input[type=text],
+.footer .contact input[type=email],
 .footer .contact textarea {
   border: 1px solid #c9c9c9;
   padding: 10px;
