@@ -352,23 +352,36 @@ ol {
 .footer .contact {
   float: left;
 }
-.footer .gallery {
-  width: 50%;
+@media (min-width: 768px) {
+  .footer .gallery {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .gallery {
+    width: 50%;
+  }
 }
 .footer .gallery .img-box {
   overflow: hidden;
   margin-bottom: 20px;
 }
 .footer .gallery .img-box img {
-  float: left;
   width: 150px;
   height: 150px;
 }
-.footer .gallery .img-box .text {
-  float: left;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: calc(100% - 180px);
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 180px);
+  }
 }
 .footer .gallery .img-box .text h4 {
   color: #e2494c;
@@ -379,8 +392,15 @@ ol {
   line-height: 1.9;
   margin-top: 8px;
 }
-.footer .info {
-  width: 25%;
+@media (min-width: 768px) {
+  .footer .info {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .info {
+    width: 25%;
+  }
 }
 .footer .info ul {
   color: #888;
@@ -399,8 +419,15 @@ ol {
   margin-top: 8px;
   color: #888;
 }
-.footer .contact {
-  width: 25%;
+@media (min-width: 768px) {
+  .footer .contact {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .contact {
+    width: 25%;
+  }
 }
 .footer .contact input[type=text],
 .footer .contact input[type=email],
@@ -423,14 +450,24 @@ ol {
   border-top: 1px solid #c5c5c5;
   overflow: hidden;
   color: #888;
+  margin-top: 30px;
 }
-.footer .copyright .text,
+@media (min-width: 768px) {
+  .footer .copyright .text,
 .footer .copyright .author {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
+  }
 }
-.footer .copyright .author {
-  text-align: right;
+@media (min-width: 768px) {
+  .footer .copyright .author {
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .footer .copyright .author {
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=homepage.css.map */
