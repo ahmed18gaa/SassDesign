@@ -132,15 +132,21 @@ ol {
   }
 }
 .header .navbar li {
-  width: 20%;
   float: left;
   font-size: 18px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .header .navbar li {
+    width: 20%;
+  }
 }
 @media (max-width: 767px) {
   .header .navbar li {
     float: none;
     display: block;
+    text-align: left;
+    padding: 0 10px;
   }
 }
 .header .navbar li a {
