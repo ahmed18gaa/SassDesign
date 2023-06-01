@@ -31,6 +31,12 @@
   clear: both;
 }
 
+@media (max-width: 767px) {
+  .text-center-xs {
+    text-align: center;
+  }
+}
+
 .head-with-border {
   position: relative;
 }
@@ -180,12 +186,20 @@ ol {
 
 /* End Slider */
 /* Start Services */
-.services .service-box {
-  float: left;
-  width: 33.3333333333%;
+@media (min-width: 992px) {
+  .services .service-box {
+    float: left;
+    width: 33.3333333333%;
+  }
+  .services .service-box:not(:last-of-type) {
+    padding-right: 20px;
+  }
 }
-.services .service-box:not(:last-of-type) {
-  padding-right: 20px;
+@media (max-width: 767px) {
+  .services .service-box i {
+    display: block;
+    margin-bottom: 15px;
+  }
 }
 .services .service-box .service-title {
   color: #666;

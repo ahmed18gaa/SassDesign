@@ -44,10 +44,18 @@
 /* Start Services */
 .services {
   .service-box {
-    float: variables.$float-left;
-    width: (100% / 3);
-    &:not(:last-of-type) {
-      padding-right: 20px;
+    @media #{variables.$minMedium} {
+      float: variables.$float-left;
+      width: (100% / 3);
+      &:not(:last-of-type) {
+        padding-right: 20px;
+      }
+    }
+    @media #{variables.$maxMobile} {
+      i {
+        display: block;
+        margin-bottom: 15px;
+      }
     }
     .service-title {
       color: #666;
