@@ -220,12 +220,31 @@ ol {
 
 /* End Services */
 /* Start Our Players */
-.our-players .player-box {
-  float: left;
-  width: 20%;
+@media (min-width: 768px) {
+  .our-players .player-box {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
-.our-players .player-box:not(:last-of-type) {
-  padding-right: 20px;
+@media (min-width: 992px) {
+  .our-players .player-box {
+    width: 33.3333333333%;
+    text-align: left;
+    padding: 0 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .our-players .player-box {
+    width: 20%;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .our-players .player-box {
+    margin-bottom: 40px;
+  }
 }
 .our-players .player-box .player-img {
   max-width: 100%;

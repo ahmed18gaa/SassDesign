@@ -80,10 +80,23 @@
 /* Start Our Players */
 .our-players {
   .player-box {
-    float: variables.$float-left;
-    width: (100% / 5);
-    &:not(:last-of-type) {
-      padding-right: 20px;
+    @media #{variables.$minSmall} {
+      float: variables.$float-left;
+      width: (100% / 2);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    @media #{variables.$minMedium} {
+      width: (100% / 3);
+      text-align: variables.$text-left;
+      padding: 0 20px;
+    }
+    @media #{variables.$minLarge} {
+      width: (100% / 5);
+      margin-bottom: 0;
+    }
+    @media #{variables.$maxMobile} {
+      margin-bottom: 40px;
     }
     .player-img {
       max-width: 100%;
