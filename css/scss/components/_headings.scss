@@ -10,6 +10,9 @@
     width: 400px;
     padding: 10px 15px;
     text-transform: uppercase;
+    @media #{variables.$maxMobile} {
+      width: 300px;
+    }
     &::before {
       content: "";
       width: 100%;

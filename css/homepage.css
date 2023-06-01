@@ -50,6 +50,11 @@
   padding: 10px 15px;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  .head-with-border h2 {
+    width: 300px;
+  }
+}
 .head-with-border h2::before {
   content: "";
   width: 100%;
