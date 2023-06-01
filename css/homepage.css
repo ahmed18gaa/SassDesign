@@ -279,12 +279,21 @@ ol {
 /* End Our Players */
 /* Start Lorem Ipsum */
 .lorem-ipsum .lorem-box {
-  float: left;
-  width: 31.3333333333%;
   text-align: center;
 }
-.lorem-ipsum .lorem-box:not(:last-of-type) {
-  margin-right: 3%;
+@media (min-width: 768px) {
+  .lorem-ipsum .lorem-box {
+    float: left;
+    width: 31.3333333333%;
+  }
+  .lorem-ipsum .lorem-box:not(:last-of-type) {
+    margin-right: 3%;
+  }
+}
+@media (max-width: 767px) {
+  .lorem-ipsum .lorem-box:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 .lorem-ipsum .lorem-box .lorem-img {
   max-width: 100%;

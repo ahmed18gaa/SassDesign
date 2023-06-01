@@ -123,11 +123,18 @@
 /* Start Lorem Ipsum */
 .lorem-ipsum {
   .lorem-box {
-    float: variables.$float-left;
-    width: (94% / 3);
     text-align: center;
-    &:not(:last-of-type) {
-      margin-right: 3%;
+    @media #{variables.$minSmall} {
+      float: variables.$float-left;
+      width: (94% / 3);
+      &:not(:last-of-type) {
+        margin-right: 3%;
+      }
+    }
+    @media #{variables.$maxMobile} {
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
     }
     .lorem-img {
       max-width: 100%;
